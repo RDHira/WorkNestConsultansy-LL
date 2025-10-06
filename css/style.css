@@ -1,0 +1,4 @@
+ /* After header close -> navbar adjusts */
+    .navbar-top {
+      top: 0 !important;
+    }

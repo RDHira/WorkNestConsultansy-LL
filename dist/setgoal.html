@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WorkNestConsultancy</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> 
+  <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="pt-24 font-serif">
+    <!-- Header Top Bar -->
+ <header id="header-bar" class="bg-orange-200 text-gray-800 text-sm fixed top-0 left-0 w-full z-50 h-8">
+  <div class="max-w-7xl mx-auto flex justify-between items-center px-4 h-8">
+
+    <!-- Left: Email & Phone (Desktop only) -->
+    <div class="hidden md:flex space-x-6">
+      <a href="mailto:info@abroadstudy.com" class="flex items-center space-x-1 hover:text-green-500">
+        <i class="fa-solid fa-envelope"></i>
+        <span>worknextconsultancy.com</span>
+      </a>
+      <a href="tel:+977-9812345678" class="flex items-center space-x-1 hover:text-green-500">
+        <i class="fa-solid fa-phone"></i>
+        <span>+977-9848700803 || 9745401836 || 9851031038</span>
+      </a>
+    </div>
+
+    <!-- Center: Social Icons (Always visible) -->
+    <div class="flex space-x-4">
+      <a href="#" class="hover:text-blue-500"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#" class="hover:text-pink-500"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#" class="hover:text-sky-400"><i class="fa-brands fa-twitter"></i></a>
+      <a href="#" class="hover:text-blue-600"><i class="fa-brands fa-linkedin-in"></i></a>
+    </div>
+
+    <!-- Right: Close Icon -->
+    <button id="header-close" class="text-gray-800 hover:text-orange-700 text-sm">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+  </div>
+</header>
+
+<!-- Navbar -->
+<nav id="navbar" class="bg-white shadow-md fixed top-8 left-0 w-full z-40 h-16 transition-all">
+  <div class="max-w-7xl mx-auto px-4 md:px-8">
+    <div class="flex justify-between items-center h-16">
+      <!-- Logo -->
+      <div >
+        <div class="flex items-center space-x-2">
+          <img src="/images/logo.webp" alt="Logo" class="w-10 h-10 rounded-full">
+          <span class="font-bold text-xl text-gray-800">Work Nest Consultancy</span>
+        </div>
+        <!-- <span class="text-gray-500 ml-12 text-sm">Nepal</span> -->
+      </div>
+
+      <!-- Desktop Links -->
+      <div class="hidden md:flex space-x-8">
+        <a href="#" class="text-gray-700 hover:text-orange-600">Universities</a>
+        <a href="#" class="text-gray-700 hover:text-orange-600">Destination</a>
+        <a href="#" class="text-gray-700 hover:text-orange-600">Services</a>
+        <a href="#" class="text-gray-700 hover:text-orange-600">More</a>
+      </div>
+
+      <!-- Desktop Sign In -->
+      <div class="hidden md:block">
+        <a href="#signin" class="bg-green-700 text-white px-5 py-3 rounded-full uppercase hover:bg-orange-700">Sign In</a>
+         <a href="#signin" class="bg-orange-700 text-white px-5 py-3 rounded-full uppercase hover:bg-green-700">Book Now</a>
+      </div>
+
+      <!-- Mobile Hamburger -->
+      <button id="menu-toggle" class="md:hidden text-2xl text-gray-700 focus:outline-none">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden flex-col space-y-4 mt-2 md:hidden pb-4">
+      <a href="#" class="block text-gray-100 hover:text-orange-600">Universities</a>
+      <a href="#" class="block text-gray-100 hover:text-orange-600">Destination</a>
+      <a href="#" class="block text-gray-100 hover:text-orange-600">Services</a>
+      <a href="#" class="block text-gray-100 hover:text-orange-600">More</a>
+      <a href="#signin" class="block bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-orange-600 text-center">Sign In</a>
+      <a href="#signin" class="block bg-orange-600 text-white px-4 py-2 rounded-lg hover:bg-green-600 text-center">Book Now</a>
+    </div>
+  </div>
+</nav>
+
+
+<main class="text-center my-60 text-orange-600">
+    <h1 class="text-3xl font-bold uppercase">Set Your Goals</h1>
+    <p class="text-xl font-semibold">Under Construction</p>
+</main>
+  
+
+
+<!-- Footer Section -->
+  <footer class="bg-green-900 text-white">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12 py-12">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10 text-center md:text-left">
+
+        <!-- Logo + About -->
+        <div>
+          <div class="flex md:justify-start justify-center items-center space-x-2 mb-4">
+            <div class="bg-orange-500 w-14 h-14 flex items-center justify-center rounded-full shadow-lg shadow-orange-300/40">
+              <img src="/images/logo.webp" alt="logo" srcset="">
+            </div>
+            <h2 class="font-bold text-xl">Work Nest Consultancy</h2>
+          </div>
+          <p class="text-gray-200 text-sm leading-relaxed">
+            Dream Big, Fly Far - Your trusted partner for overseas education and career opportunities.
+          </p>
+          <div class="mt-2">
+            <h1 class="text-orange-400 font-semibold">Office Hours</h1>
+            <p>Sun–Fri, 10:00 – 18:00 NST</p>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h3 class="font-semibold text-lg mb-4 text-orange-400">Quick Links</h3>
+          <ul class="space-y-2 text-gray-200">
+            <li><a href="#" class="hover:text-orange-400 transition">Universities</a></li>
+            <li><a href="#" class="hover:text-orange-400 transition">Destination</a></li>
+            <li><a href="#" class="hover:text-orange-400 transition">Service</a></li>
+            <li><a href="#" class="hover:text-orange-400 transition">Courses</a></li>
+          </ul>
+        </div>
+
+        <!-- Social Icons -->
+        <div class="icon">
+          <h1 class="font-bold">Follow Us:</h1>
+         <div class="flex flex-col space-y-2">
+          <a href="#" class="w-8 h-8 flex items-center justify-center rounded-full shadow hover:bg-blue-600 hover:text-white transition">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" class="w-8 h-8 flex items-center justify-center rounded-full shadow hover:bg-pink-500 hover:text-white transition">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" class="w-8 h-8 flex items-center justify-center rounded-full shadow hover:bg-blue-700 hover:text-white transition">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="#" class="w-8 h-8 flex items-center justify-center rounded-full shadow hover:bg-red-600 hover:text-white transition">
+            <i class="fab fa-youtube"></i>
+          </a>
+         </div>
+       </div>
+
+        <!-- Contact Us -->
+    <div>
+      <h3 class="font-semibold text-lg mb-4 text-orange-400">Contact Us</h3>
+      <div class="flex flex-col items-center md:items-start space-y-3">
+       <div>
+        <p class="flex items-center space-x-2 mb-2">
+          <i class="fa-solid fa-location-dot"></i> <span>Kathmandu 32, Pepsicola (Garden Chowk), Nepal</span>
+        </p>
+        <p class="flex items-center space-x-2 mb-2">
+          <i class="fa-solid fa-phone text-sm mx-1"></i> <span>+977 9848700803</span>
+        </p>
+        <p class="flex items-center space-x-2 mb-2">
+          <i class="fa-solid fa-envelope"></i> <span>worknestconsultancy@gmail.com</span>
+        </p>
+        
+      </div>
+    </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Divider -->
+      <div class="border-t border-green-700 mt-4 pt-4 flex flex-col md:flex-row justify-center items-center text-center md:text-left">
+
+        <!-- Copyright -->
+        <p class="text-gray-300 text-sm text-center">
+          © <span id="year"></span> Work Nest Consultancy. All rights reserved. | Made with 
+          <span class="text-orange-400">❤️</span> by <span class="text-white font-semibold">Lara Logic Team</span>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+
+<!--🔹JS Scripts files   -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
