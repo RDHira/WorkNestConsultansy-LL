@@ -49,6 +49,29 @@ menuToggle.addEventListener("click", () => {
     // lazy: { loadPrevNext: true },
   });
 
+// navbar for dropdown
+const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileServicesBtn = document.getElementById('mobileServicesBtn');
+    const mobileServices = document.getElementById('mobileServices');
+    const mobileMoreBtn = document.getElementById('mobileMoreBtn');
+    const mobileMore = document.getElementById('mobileMore');
+
+    // Toggle mobile menu
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Toggle mobile dropdowns
+    mobileServicesBtn.addEventListener('click', () => {
+      mobileServices.classList.toggle('hidden');
+    });
+    mobileMoreBtn.addEventListener('click', () => {
+      mobileMore.classList.toggle('hidden');
+    });
+
+
+
   // Destination section
   // Modal Content
         const modalContent = {
@@ -105,3 +128,41 @@ menuToggle.addEventListener("click", () => {
 document.getElementById("year").textContent = new Date().getFullYear();
 
 
+// Sign In / Sign Up
+const signinTab = document.getElementById('signinTab');
+    const signupTab = document.getElementById('signupTab');
+    const signinForm = document.getElementById('signinForm');
+    const signupForm = document.getElementById('signupForm');
+    const switchToSignup = document.getElementById('switchToSignup');
+    const switchToSignin = document.getElementById('switchToSignin');
+
+    // Toggle between forms
+    function showSignin() {
+      signinForm.classList.remove('hidden');
+      signupForm.classList.add('hidden');
+      signinTab.classList.add('border-b-2', 'border-green-600', 'text-green-600');
+      signupTab.classList.remove('border-b-2', 'border-green-600', 'text-green-600');
+    }
+
+    function showSignup() {
+      signupForm.classList.remove('hidden');
+      signinForm.classList.add('hidden');
+      signupTab.classList.add('border-b-2', 'border-orange-500', 'text-orange-600');
+      signinTab.classList.remove('border-b-2', 'border-green-600', 'text-green-600');
+    }
+
+    signinTab.addEventListener('click', showSignin);
+    signupTab.addEventListener('click', showSignup);
+    switchToSignup.addEventListener('click', showSignup);
+    switchToSignin.addEventListener('click', showSignin);
+
+    // Password toggle
+    const toggleSigninPassword = document.getElementById('toggleSigninPassword');
+    const signinPassword = document.getElementById('signinPassword');
+    toggleSigninPassword.addEventListener('click', () => {
+      const type = signinPassword.type === 'password' ? 'text' : 'password';
+      signinPassword.type = type;
+      toggleSigninPassword.innerHTML = type === 'password'
+        ? '<i class="fa-regular fa-eye"></i>'
+        : '<i class="fa-regular fa-eye-slash"></i>';
+    });

@@ -42,55 +42,113 @@
       <i class="fa-solid fa-xmark"></i>
     </button>
   </div>
-</header>
+ </header>
 
 <!-- Navbar -->
 <nav id="navbar" class="bg-white shadow-md fixed top-8 left-0 w-full z-40 h-16 transition-all">
-  <div class="max-w-7xl mx-auto px-4 md:px-8">
-    <div class="flex justify-between items-center h-16">
-      <!-- Logo -->
-      <div >
-        <a href="#">  
-        <div class="flex items-center space-x-2 cursor-pointer">
-          <img src="/images/logo.webp" alt="Logo" class="w-12 h-12 rounded-full">
-          <span class="font-bold text-xl text-gray-800">Work Nest Consultancy</span>
-          </div>
+    <div class="max-w-7xl mx-auto px-4 md:px-8">
+      <div class="flex justify-between items-center h-16">
+        <!-- Logo -->
+        <div>
+          <a href="#">
+            <div class="flex items-center space-x-2 cursor-pointer">
+              <img src="/images/logo.webp" alt="Logo" class="w-12 h-12 rounded-full">
+              <span class="font-bold text-xl text-gray-800">Work Nest Consultancy</span>
+            </div>
           </a>
-        <!-- <span class="text-gray-500 ml-12 text-sm">Nepal</span> -->
+        </div>
+
+        <!-- Desktop Links -->
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="#Universities" class="text-gray-700 hover:text-orange-600">Universities</a>
+          <a href="#destinations" class="text-gray-700 hover:text-orange-600">Destination</a>
+
+          <!-- Services Dropdown -->
+          <div class="relative group">
+            <button class="text-gray-700 hover:text-orange-600 flex items-center gap-1">
+              Services <i class="fa-solid fa-chevron-down text-xs mt-1"></i>
+            </button>
+            <div
+              class="absolute hidden group-hover:block bg-white shadow-lg rounded-lg mt-2 w-48 transition-all duration-200 border border-gray-100">
+              <a href="#" class="block px-4 py-2 hover:bg-green-600 hover:text-white">Visa Assistance</a>
+              <a href="#" class="block px-4 py-2 hover:bg-orange-600 hover:text-white">Admission Guidance</a>
+              <a href="#" class="block px-4 py-2 hover:bg-green-600 hover:text-white">Career Counselling</a>
+              <a href="#" class="block px-4 py-2 hover:bg-orange-600 hover:text-white">Language Classes</a>
+            </div>
+          </div>
+
+          <!-- More Dropdown -->
+          <div class="relative group">
+            <button class="text-gray-700 hover:text-orange-600 flex items-center gap-1">
+              More <i class="fa-solid fa-chevron-down text-xs mt-1"></i>
+            </button>
+            <div
+              class="absolute hidden group-hover:block bg-white shadow-lg rounded-lg mt-2 w-48 transition-all duration-200 border border-gray-100">
+              <a href="#" class="block px-4 py-2 hover:bg-orange-600 hover:text-white">About Us</a>
+              <a href="#" class="block px-4 py-2 hover:bg-green-600 hover:text-white">Gallery</a>
+              <a href="#" class="block px-4 py-2 hover:bg-orange-600 hover:text-white">Testimonials</a>
+              <a href="#" class="block px-4 py-2 hover:bg-green-600 hover:text-white">Contact Us</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Desktop Sign In / Book Now -->
+        <div class="hidden md:block">
+          <a href="/dist/signIn.html"
+            class="bg-green-700 text-white px-5 py-3 rounded-full uppercase hover:bg-orange-700 transition-all"
+            target="_blank">Sign In</a>
+          <a href="#signin"
+            class="bg-orange-700 text-white px-5 py-3 rounded-full uppercase hover:bg-green-700 transition-all ml-2">Book
+            Now</a>
+        </div>
+
+        <!-- Mobile Hamburger -->
+        <button id="menu-toggle" class="md:hidden text-2xl text-gray-700 focus:outline-none">
+          <i class="fa-solid fa-bars"></i>
+        </button>
       </div>
 
-      <!-- Desktop Links -->
-      <div class="hidden md:flex space-x-8">
-        <a href="#Universities" class="text-gray-700 hover:text-orange-600">Universities</a>
-        <a href="#destinations" class="text-gray-700 hover:text-orange-600">Destination</a>
-        <a href="#" class="text-gray-700 hover:text-orange-600">Services</a>
-        <a href="#" class="text-gray-700 hover:text-orange-600">More</a>
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden flex-col space-y-4 mt-2 md:hidden pb-4">
+        <a href="#Universities" class="block text-gray-700 hover:text-orange-600">Universities</a>
+        <a href="#destinations" class="block text-gray-700 hover:text-orange-600">Destination</a>
+
+        <!-- Mobile Services Dropdown -->
+        <div>
+          <button id="mobileServicesBtn"
+            class="flex justify-between w-full text-gray-700 hover:text-orange-600 focus:outline-none">
+            Services <i class="fa-solid fa-chevron-down mt-1"></i>
+          </button>
+          <div id="mobileServices" class="hidden ml-4 mt-2 space-y-2">
+            <a href="#" class="block text-sm text-gray-700 hover:text-green-600">Visa Assistance</a>
+            <a href="#" class="block text-sm text-gray-700 hover:text-orange-600">Admission Guidance</a>
+            <a href="#" class="block text-sm text-gray-700 hover:text-green-600">Career Counselling</a>
+            <a href="#" class="block text-sm text-gray-700 hover:text-orange-600">Language Classes</a>
+          </div>
+        </div>
+
+        <!-- Mobile More Dropdown -->
+        <div>
+          <button id="mobileMoreBtn"
+            class="flex justify-between w-full text-gray-700 hover:text-orange-600 focus:outline-none">
+            More <i class="fa-solid fa-chevron-down mt-1"></i>
+          </button>
+          <div id="mobileMore" class="hidden ml-4 mt-2 space-y-2">
+            <a href="#" class="block text-sm text-gray-700 hover:text-orange-600">About Us</a>
+            <a href="#" class="block text-sm text-gray-700 hover:text-green-600">Gallery</a>
+            <a href="#" class="block text-sm text-gray-700 hover:text-orange-600">Testimonials</a>
+            <a href="#" class="block text-sm text-gray-700 hover:text-green-600">Contact Us</a>
+          </div>
+        </div>
+
+        <a href="/dist/signIn.html"
+          class="block bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-orange-600 text-center" target="_blank">Sign
+          In</a>
+        <a href="#signin" class="block bg-orange-600 text-white px-4 py-2 rounded-lg hover:bg-green-600 text-center">Book
+          Now</a>
       </div>
-
-
-      <!-- Desktop Sign In -->
-      <div class="hidden md:block">
-        <a href="#signin" class="bg-green-700 text-white px-5 py-3 rounded-full uppercase hover:bg-orange-700">Sign In</a>
-         <a href="#signin" class="bg-orange-700 text-white px-5 py-3 rounded-full uppercase hover:bg-green-700">Book Now</a>
-      </div>
-
-      <!-- Mobile Hamburger -->
-      <button id="menu-toggle" class="md:hidden text-2xl text-gray-700 focus:outline-none">
-        <i class="fa-solid fa-bars"></i>
-      </button>
     </div>
-
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden flex-col space-y-4 mt-2 md:hidden pb-4">
-      <a href="Universities" class="block text-gray-100 hover:text-orange-600">Universities</a>
-      <a href="destinations" class="block text-gray-100 hover:text-orange-600">Destination</a>
-      <a href="#" class="block text-gray-100 hover:text-orange-600">Services</a>
-      <a href="#" class="block text-gray-100 hover:text-orange-600">More</a>
-      <a href="#signin" class="block bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-orange-600 text-center">Sign In</a>
-      <a href="#signin" class="block bg-orange-600 text-white px-4 py-2 rounded-lg hover:bg-green-600 text-center">Book Now</a>
-    </div>
-  </div>
-</nav>
+  </nav>
 
 <!-- Main Content -->
 <!-- Hero Section -->
