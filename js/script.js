@@ -50,8 +50,6 @@ menuToggle.addEventListener("click", () => {
   });
 
 // navbar for dropdown
-const menuToggle = document.getElementById('menu-toggle');
-    const mobileMenu = document.getElementById('mobile-menu');
     const mobileServicesBtn = document.getElementById('mobileServicesBtn');
     const mobileServices = document.getElementById('mobileServices');
     const mobileMoreBtn = document.getElementById('mobileMoreBtn');
