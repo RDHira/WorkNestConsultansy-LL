@@ -19,7 +19,7 @@
 
     <!-- Left: Email & Phone (Desktop only) -->
     <div class="hidden md:flex space-x-6">
-      <a href="mailto:info@abroadstudy.com" class="flex items-center space-x-1">
+      <a href="mailto:info@abroadstudy.com" class="flex items-center space-x-1 ">
         <i class="fa-solid fa-envelope"></i>
         <span class="hover:text-green-500">worknextconsultancy.com</span>
       </a>
@@ -47,7 +47,7 @@
 <!-- Navbar -->
 <nav id="navbar" class="bg-white shadow-md fixed top-8 left-0 w-full z-40 h-16 transition-all">
     <div class="max-w-7xl mx-auto px-4 md:px-8">
-      <div class="flex justify-between items-center h-16">
+      <div class="flex justify-between items-center h-16"> 
         <!-- Logo -->
         <div>
           <a href="#">
@@ -79,7 +79,7 @@
 
           <!-- More Dropdown -->
           <div class="relative group">
-            <button class="text-gray-700 hover:text-orange-600 flex items-center gap-1">
+            <button type="button" class="text-gray-700 hover:text-orange-600 flex items-center gap-1">
               More <i class="fa-solid fa-chevron-down text-xs mt-1"></i>
             </button>
             <div
@@ -115,7 +115,7 @@
 
         <!-- Mobile Services Dropdown -->
         <div>
-          <button id="mobileServicesBtn"
+          <button type="button" id="mobileServicesBtn"
             class="flex justify-between w-full text-gray-700 hover:text-orange-600 focus:outline-none">
             Services <i class="fa-solid fa-chevron-down mt-1"></i>
           </button>
@@ -261,8 +261,7 @@
       <!-- Destinations Grid -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
         <!-- Destination Card 1: Australia -->
-        <div class="group relative bg-cover bg-center rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 animate-slide-up"
-          style="background-image: url('https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80'); animation-delay: 0.1s;">
+        <div class="group relative bg-cover bg-center rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 animate-slide-up" style="background-image: url('https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80'); animation-delay: 0.1s;">
 
           <!-- Background overlay -->
           <div
@@ -796,18 +795,31 @@
         <div class="icon">
           <h1 class="font-semibold text-lg mb-4 text-orange-400">Follow Us:</h1>
          <div class="flex flex-col space-y-2">
-          <a href="#" class="w-8 h-8 flex items-center justify-center rounded-full shadow hover:bg-blue-600 hover:text-white transition">
+
+          <div class="flex items-center gap-1">
+             <a href="#" class="w-6 h-6 flex items-center justify-center rounded-full shadow bg-blue-600 text-white transition">
             <i class="fab fa-facebook-f"></i>
           </a>
-          <a href="#" class="w-8 h-8 flex items-center justify-center rounded-full shadow hover:bg-pink-500 hover:text-white transition">
+           <span class="hover:text-orange-500 cursor-pointer">Facebook</span>
+          </div>
+          <div class="flex items-center gap-1">
+             <a href="#" class="w-6 h-6 flex items-center justify-center rounded-full shadow bg-pink-500 text-white transition">
             <i class="fab fa-instagram"></i>
           </a>
-          <a href="#" class="w-8 h-8 flex items-center justify-center rounded-full shadow hover:bg-blue-700 hover:text-white transition">
+           <span class="hover:text-orange-500 cursor-pointer">Instagram</span>
+          </div>
+          <div class="flex items-center gap-1">
+          <a href="#" class="w-6 h-6 flex items-center justify-center rounded-full shadow bg-blue-700 text-white transition">
             <i class="fab fa-linkedin-in"></i>
           </a>
-          <a href="#" class="w-8 h-8 flex items-center justify-center rounded-full shadow hover:bg-red-600 hover:text-white transition">
+           <span class="hover:text-orange-500 cursor-pointer">LinkedIn</span>
+          </div>
+          <div class="flex items-center gap-1">
+            <a href="#" class="w-6 h-6 flex items-center justify-center rounded-full shadow bg-red-600 text-white transition">
             <i class="fab fa-youtube"></i>
           </a>
+          <span class="hover:text-orange-500 cursor-pointer">Youtube</span>
+          </div>
          </div>
        </div>
 
